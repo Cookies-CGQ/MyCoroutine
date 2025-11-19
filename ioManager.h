@@ -39,7 +39,7 @@ namespace nsCoroutine
             EventContext write;
             //事件关联的fd值（句柄）
             int fd = 0;
-            //当前注册的事件，可能是READ、WRITE、READ|WRITE
+            //当前注册的事件，可能是READ、WRITE、READ|WRITE，可以看成是位图
             Event events = NONE;
             //事件上下文的互斥锁
             std::mutex mutex;
@@ -54,7 +54,7 @@ namespace nsCoroutine
     public:
         //threads线程数量，use_caller是否将主线程或调度线程包含进行，name调度器的名字
         //允许设置线程数量、是否使用调度者线程以及名称
-        IOManager(size_t threads = 1, bool use_caller = true, const std::string& name = "IOManager");;
+        IOManager(size_t threads = 1, bool use_caller = true, const std::string& name = "IOManager");
         ~IOManager();
         //事件管理方法
         //添加一个事件到文件描述符fd上，并关联一个回调函数cb

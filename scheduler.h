@@ -63,7 +63,7 @@ namespace nsCoroutine
         //关闭线程池，停止调度器，等所有调度任务都执行完后再返回。
         virtual void stop();
     
-    private:
+    protected:
         //唤醒线程
         virtual void tickle();
         //线程函数
