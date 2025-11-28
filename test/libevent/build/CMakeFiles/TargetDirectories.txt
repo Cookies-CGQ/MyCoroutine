@@ -1,0 +1,3 @@
+/home/ubuntu/myfile/Coroutine/test/libevent/build/CMakeFiles/echo_server.dir
+/home/ubuntu/myfile/Coroutine/test/libevent/build/CMakeFiles/edit_cache.dir
+/home/ubuntu/myfile/Coroutine/test/libevent/build/CMakeFiles/rebuild_cache.dir
